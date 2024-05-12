@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: bisque;
+}
+
+.logo {
+  margin-left: 1%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: red;
+}
+
+.menu {
+  margin: 1%;
+}
+
+.menu a {
+  margin-right: 10px;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+.first-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+}
+
+.para {
+  flex: 1;
+  background-color: antiquewhite;
+  padding: 4px;
+  padding: 1%;
+}
+
+.para p {
+  font-size: 1.3rem;
+}
+
+.img-box {
+  flex: 1;
+  background-color: aqua;
+  padding: 5px;
+}
+
+img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+.img-first {
+  width: 100%;
+  position: relative;
+  right: 125%;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.img-second {
+  width: 100%;
+  position: relative;
+  left: 5%;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.grid {
+  margin-top: 120%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4%;
+}
+
+.grid img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1052px) {
+  .para p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .first-cont {
+    flex-direction: column;
+  }
+
+  .para p {
+    text-align: justify;
+  }
+
+  .img-first {
+    width: 80%;
+    position: relative;
+    right: 29%;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+
+  .img-second {
+    width: 60%;
+    position: relative;
+    left: 35%;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+
+  .grid {
+    margin-top: 180%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu a {
+      font-size: 1.2rem;
+    }
+
+    .para {
+      padding: 1%;
+    }
+
+    .para p {
+      text-align: justify;
+    }
+
+    .img-first {
+      width: 50%;
+      left: 1%;
+    }
+
+    .img-second {
+      width: 60%;
+      position: relative;
+      left: 39%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .grid {
+      margin-top: 200%;
+    }
+  }
+}
