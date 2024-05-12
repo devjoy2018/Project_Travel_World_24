@@ -119,10 +119,6 @@ img:hover {
     flex-direction: column;
   }
 
-  .para p {
-    text-align: justify;
-  }
-
   .img-first {
     width: 80%;
     position: relative;
