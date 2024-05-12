@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 .logo {
@@ -56,18 +56,19 @@ a:hover {
 
 .para {
   flex: 1;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   padding: 4px;
   padding: 1%;
 }
 
 .para p {
   font-size: 1.3rem;
+  text-align: justify;
 }
 
 .img-box {
   flex: 1;
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 5px;
 }
 
